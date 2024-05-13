@@ -26,7 +26,7 @@ public class MockUtils {
         driver = null;
     }
 
-    private WebDriver openDriver() {
+    private static WebDriver openDriver() {
         ChromeOptions options = new ChromeOptions();
 //            options.addArguments("--remote-debugging-port=9222", "--headless", "--no-sandbox");
         WebDriver driver = new ChromeDriver(options);
