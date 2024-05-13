@@ -1,0 +1,47 @@
+<suite name="HerokuappTests">
+    <test name="BasicAuthTest">
+        <classes>
+            <class name="org.ITAcademy.part1.BasicAuthTest"/>
+        </classes>
+    </test>
+    <test name="JQueryUIMenusTest">
+        <classes>
+            <class name="org.ITAcademy.part1.JQueryUIMenusTest"/>
+        </classes>
+    </test>
+    <test name="DropdownTest">
+        <classes>
+            <class name="org.ITAcademy.part1.DropdownTest"/>
+        </classes>
+    </test>
+    <test name="DynamicControlsTest">
+        <classes>
+            <class name="org.ITAcademy.part1.DynamicControlsTest"/>
+        </classes>
+    </test>
+    <test name="ExitIntentTest">
+        <classes>
+            <class name="org.ITAcademy.part1.ExitIntentTest"/>
+        </classes>
+    </test>
+    <test name="FormAuthenticationTest">
+        <classes>
+            <class name="org.ITAcademy.part1.FormAuthenticationTest"/>
+        </classes>
+    </test>
+    <test name="FramesTest">
+        <classes>
+            <class name="org.ITAcademy.part1.FramesTest"/>
+        </classes>
+    </test>
+    <test name="JavaScriptAlertsTest">
+        <classes>
+            <class name="org.ITAcademy.part1.JavaScriptAlertsTest"/>
+        </classes>
+    </test>
+    <test name="MultipleWindowsTest">
+        <classes>
+            <class name="org.ITAcademy.part1.MultipleWindowsTest"/>
+        </classes>
+    </test>
+</suite>

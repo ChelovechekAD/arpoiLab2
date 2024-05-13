@@ -1,8 +1,7 @@
-package org.ITAcademy;
+package org.ITAcademy.part1;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -12,15 +11,9 @@ import java.time.Duration;
 
 import static org.testng.Assert.*;
 
-public class DynamicControlsTest {
+public class DynamicControlsTest extends BaseTest {
 
-    private WebDriver driver;
     private WebDriverWait wait;
-
-    @BeforeClass
-    public void setDriver() {
-        driver = MockUtils.getDriver();
-    }
 
     @Test(groups = "dynamicControls")
     public void testDynamicControlsCheckbox() {
@@ -38,10 +31,6 @@ public class DynamicControlsTest {
         assertNull(driver.findElement(By.xpath("//*[@id='input-example']/input")).getAttribute("disabled"));
     }
 
-    @AfterClass
-    public void closeUp() {
-        MockUtils.closeDriver();
-    }
 
     @BeforeGroups("dynamicControls")
     public void setUpSecurity() {

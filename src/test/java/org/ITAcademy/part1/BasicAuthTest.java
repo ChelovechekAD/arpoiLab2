@@ -1,21 +1,11 @@
-package org.ITAcademy;
+package org.ITAcademy.part1;
 
-import lombok.RequiredArgsConstructor;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 
-public class BasicAuthTest {
-    private WebDriver driver;
-
-    @BeforeClass
-    public void setDriver() {
-        driver = MockUtils.getDriver();
-    }
+public class BasicAuthTest extends BaseTest {
 
     @Test
     public void testBasicAuth() {
@@ -27,8 +17,4 @@ public class BasicAuthTest {
         assertEquals(h1Text, "Basic Auth");
     }
 
-    @AfterClass
-    public void closeUp() {
-        MockUtils.closeDriver();
-    }
 }

@@ -1,21 +1,11 @@
-package org.ITAcademy;
+package org.ITAcademy.part1;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 
-public class DropdownTest {
-
-    private WebDriver driver;
-
-    @BeforeClass
-    public void setDriver() {
-        driver = MockUtils.getDriver();
-    }
+public class DropdownTest extends BaseTest{
 
     @Test
     public void testDropdown() {
@@ -25,11 +15,6 @@ public class DropdownTest {
         String selected = driver.findElement(By.xpath("//*[@id='dropdown']/option[@value='1']"))
                 .getAttribute("selected");
         assertEquals(selected, "true");
-    }
-
-    @AfterClass
-    public void closeUp() {
-        MockUtils.closeDriver();
     }
 
 }
